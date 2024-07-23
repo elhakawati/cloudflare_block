@@ -1,4 +1,4 @@
-connection: "bq-cfanalytics"
+connection: "cloudflare-logs"
 
 # include all the views
 include: "*.view"
