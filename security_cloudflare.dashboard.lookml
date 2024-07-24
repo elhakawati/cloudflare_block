@@ -408,12 +408,12 @@
     point_style: none
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: '', orientation: left, series: [{id: ctry - firewallevents.count,
-            name: ctry, axisId: cloudflare_logs.count}, {id: ip - firewallevents.count,
-            name: ip, axisId: cloudflare_logs.count}, {id: rateLimit - firewallevents.count,
-            name: rateLimit, axisId: cloudflare_logs.count}, {id: ua - firewallevents.count,
-            name: ua, axisId: cloudflare_logs.count}, {id: unknown - firewallevents.count,
-            name: unknown, axisId: cloudflare_logs.count}, {id: zl - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: ctry - httpevents.count,
+            name: ctry, axisId: cloudflare_logs.count}, {id: ip - httpevents.count,
+            name: ip, axisId: cloudflare_logs.count}, {id: rateLimit - httpevents.count,
+            name: rateLimit, axisId: cloudflare_logs.count}, {id: ua - httpevents.count,
+            name: ua, axisId: cloudflare_logs.count}, {id: unknown - httpevents.count,
+            name: unknown, axisId: cloudflare_logs.count}, {id: zl - httpevents.count,
             name: zl, axisId: cloudflare_logs.count}], showLabels: true, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -823,8 +823,8 @@
     y_axis_gridlines: true
     point_style: none
     series_types: {}
-    y_axes: [{label: '', orientation: left, series: [{id: ban - firewallevents.count,
-            name: ban, axisId: cloudflare_logs.count}, {id: simulate - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: ban - httpevents.count,
+            name: ban, axisId: cloudflare_logs.count}, {id: simulate - httpevents.count,
             name: simulate, axisId: cloudflare_logs.count}], showLabels: true, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -884,8 +884,8 @@
     point_style: none
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: '', orientation: left, series: [{id: ban - firewallevents.count,
-            name: ban, axisId: cloudflare_logs.count}, {id: simulate - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: ban - httpevents.count,
+            name: ban, axisId: cloudflare_logs.count}, {id: simulate - httpevents.count,
             name: simulate, axisId: cloudflare_logs.count}], showLabels: true, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -953,8 +953,8 @@
     y_axis_gridlines: true
     point_style: none
     series_types: {}
-    y_axes: [{label: '', orientation: left, series: [{id: ban - firewallevents.count,
-            name: ban, axisId: cloudflare_logs.count}, {id: simulate - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: ban - httpevents.count,
+            name: ban, axisId: cloudflare_logs.count}, {id: simulate - httpevents.count,
             name: simulate, axisId: cloudflare_logs.count}], showLabels: true, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -1021,8 +1021,8 @@
     y_axis_gridlines: true
     point_style: none
     series_types: {}
-    y_axes: [{label: '', orientation: left, series: [{id: ban - firewallevents.count,
-            name: ban, axisId: cloudflare_logs.count}, {id: simulate - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: ban - httpevents.count,
+            name: ban, axisId: cloudflare_logs.count}, {id: simulate - httpevents.count,
             name: simulate, axisId: cloudflare_logs.count}], showLabels: true, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -1090,8 +1090,8 @@
     y_axis_gridlines: true
     point_style: none
     series_types: {}
-    y_axes: [{label: '', orientation: left, series: [{id: ban - firewallevents.count,
-            name: ban, axisId: cloudflare_logs.count}, {id: simulate - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: ban - httpevents.count,
+            name: ban, axisId: cloudflare_logs.count}, {id: simulate - httpevents.count,
             name: simulate, axisId: cloudflare_logs.count}], showLabels: true, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true

@@ -80,11 +80,11 @@
       404 - cloudflare_logs.count: "#f3280b"
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: Ops, orientation: left, series: [{id: 0 - firewallevents.count,
-            name: '0', axisId: cloudflare_logs.count}, {id: 200 - firewallevents.count,
-            name: '200', axisId: cloudflare_logs.count}, {id: 301 - firewallevents.count,
-            name: '301', axisId: cloudflare_logs.count}, {id: 404 - firewallevents.count,
-            name: '404', axisId: cloudflare_logs.count}, {id: 500 - firewallevents.count,
+    y_axes: [{label: Ops, orientation: left, series: [{id: 0 - httpevents.count,
+            name: '0', axisId: cloudflare_logs.count}, {id: 200 - httpevents.count,
+            name: '200', axisId: cloudflare_logs.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: cloudflare_logs.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: cloudflare_logs.count}, {id: 500 - httpevents.count,
             name: '500', axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -150,14 +150,14 @@
     series_types: {}
     limit_displayed_rows: false
     hidden_series: []
-    y_axes: [{label: '', orientation: left, series: [{id: 200 - firewallevents.count,
-            name: '200', axisId: cloudflare_logs.count}, {id: 301 - firewallevents.count,
-            name: '301', axisId: cloudflare_logs.count}, {id: 302 - firewallevents.count,
-            name: '302', axisId: cloudflare_logs.count}, {id: 304 - firewallevents.count,
-            name: '304', axisId: cloudflare_logs.count}, {id: 403 - firewallevents.count,
-            name: '403', axisId: cloudflare_logs.count}, {id: 404 - firewallevents.count,
-            name: '404', axisId: cloudflare_logs.count}, {id: 499 - firewallevents.count,
-            name: '499', axisId: cloudflare_logs.count}, {id: 520 - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: 200 - httpevents.count,
+            name: '200', axisId: cloudflare_logs.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: cloudflare_logs.count}, {id: 302 - httpevents.count,
+            name: '302', axisId: cloudflare_logs.count}, {id: 304 - httpevents.count,
+            name: '304', axisId: cloudflare_logs.count}, {id: 403 - httpevents.count,
+            name: '403', axisId: cloudflare_logs.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: cloudflare_logs.count}, {id: 499 - httpevents.count,
+            name: '499', axisId: cloudflare_logs.count}, {id: 520 - httpevents.count,
             name: '520', axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -241,14 +241,14 @@
     series_types: {}
     limit_displayed_rows: false
     hidden_series: []
-    y_axes: [{label: '', orientation: left, series: [{id: 200 - firewallevents.count,
-            name: '200', axisId: cloudflare_logs.count}, {id: 301 - firewallevents.count,
-            name: '301', axisId: cloudflare_logs.count}, {id: 302 - firewallevents.count,
-            name: '302', axisId: cloudflare_logs.count}, {id: 304 - firewallevents.count,
-            name: '304', axisId: cloudflare_logs.count}, {id: 403 - firewallevents.count,
-            name: '403', axisId: cloudflare_logs.count}, {id: 404 - firewallevents.count,
-            name: '404', axisId: cloudflare_logs.count}, {id: 499 - firewallevents.count,
-            name: '499', axisId: cloudflare_logs.count}, {id: 520 - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: 200 - httpevents.count,
+            name: '200', axisId: cloudflare_logs.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: cloudflare_logs.count}, {id: 302 - httpevents.count,
+            name: '302', axisId: cloudflare_logs.count}, {id: 304 - httpevents.count,
+            name: '304', axisId: cloudflare_logs.count}, {id: 403 - httpevents.count,
+            name: '403', axisId: cloudflare_logs.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: cloudflare_logs.count}, {id: 499 - httpevents.count,
+            name: '499', axisId: cloudflare_logs.count}, {id: 520 - httpevents.count,
             name: '520', axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -331,14 +331,14 @@
     series_types: {}
     limit_displayed_rows: false
     hidden_series: []
-    y_axes: [{label: '', orientation: left, series: [{id: 200 - firewallevents.count,
-            name: '200', axisId: cloudflare_logs.count}, {id: 301 - firewallevents.count,
-            name: '301', axisId: cloudflare_logs.count}, {id: 302 - firewallevents.count,
-            name: '302', axisId: cloudflare_logs.count}, {id: 304 - firewallevents.count,
-            name: '304', axisId: cloudflare_logs.count}, {id: 403 - firewallevents.count,
-            name: '403', axisId: cloudflare_logs.count}, {id: 404 - firewallevents.count,
-            name: '404', axisId: cloudflare_logs.count}, {id: 499 - firewallevents.count,
-            name: '499', axisId: cloudflare_logs.count}, {id: 520 - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: 200 - httpevents.count,
+            name: '200', axisId: cloudflare_logs.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: cloudflare_logs.count}, {id: 302 - httpevents.count,
+            name: '302', axisId: cloudflare_logs.count}, {id: 304 - httpevents.count,
+            name: '304', axisId: cloudflare_logs.count}, {id: 403 - httpevents.count,
+            name: '403', axisId: cloudflare_logs.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: cloudflare_logs.count}, {id: 499 - httpevents.count,
+            name: '499', axisId: cloudflare_logs.count}, {id: 520 - httpevents.count,
             name: '520', axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -421,14 +421,14 @@
     series_types: {}
     limit_displayed_rows: false
     hidden_series: []
-    y_axes: [{label: '', orientation: left, series: [{id: 200 - firewallevents.count,
-            name: '200', axisId: cloudflare_logs.count}, {id: 301 - firewallevents.count,
-            name: '301', axisId: cloudflare_logs.count}, {id: 302 - firewallevents.count,
-            name: '302', axisId: cloudflare_logs.count}, {id: 304 - firewallevents.count,
-            name: '304', axisId: cloudflare_logs.count}, {id: 403 - firewallevents.count,
-            name: '403', axisId: cloudflare_logs.count}, {id: 404 - firewallevents.count,
-            name: '404', axisId: cloudflare_logs.count}, {id: 499 - firewallevents.count,
-            name: '499', axisId: cloudflare_logs.count}, {id: 520 - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: 200 - httpevents.count,
+            name: '200', axisId: cloudflare_logs.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: cloudflare_logs.count}, {id: 302 - httpevents.count,
+            name: '302', axisId: cloudflare_logs.count}, {id: 304 - httpevents.count,
+            name: '304', axisId: cloudflare_logs.count}, {id: 403 - httpevents.count,
+            name: '403', axisId: cloudflare_logs.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: cloudflare_logs.count}, {id: 499 - httpevents.count,
+            name: '499', axisId: cloudflare_logs.count}, {id: 520 - httpevents.count,
             name: '520', axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -581,14 +581,14 @@
       520 - cloudflare_logs.count: "#d7f218"
     series_types: {}
     hidden_series: []
-    y_axes: [{label: '', orientation: left, series: [{id: 200 - firewallevents.count,
-            name: '200', axisId: cloudflare_logs.count}, {id: 301 - firewallevents.count,
-            name: '301', axisId: cloudflare_logs.count}, {id: 302 - firewallevents.count,
-            name: '302', axisId: cloudflare_logs.count}, {id: 304 - firewallevents.count,
-            name: '304', axisId: cloudflare_logs.count}, {id: 403 - firewallevents.count,
-            name: '403', axisId: cloudflare_logs.count}, {id: 404 - firewallevents.count,
-            name: '404', axisId: cloudflare_logs.count}, {id: 499 - firewallevents.count,
-            name: '499', axisId: cloudflare_logs.count}, {id: 520 - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: 200 - httpevents.count,
+            name: '200', axisId: cloudflare_logs.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: cloudflare_logs.count}, {id: 302 - httpevents.count,
+            name: '302', axisId: cloudflare_logs.count}, {id: 304 - httpevents.count,
+            name: '304', axisId: cloudflare_logs.count}, {id: 403 - httpevents.count,
+            name: '403', axisId: cloudflare_logs.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: cloudflare_logs.count}, {id: 499 - httpevents.count,
+            name: '499', axisId: cloudflare_logs.count}, {id: 520 - httpevents.count,
             name: '520', axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -667,14 +667,14 @@
       520 - cloudflare_logs.count: "#d7f218"
     series_types: {}
     hidden_series: []
-    y_axes: [{label: '', orientation: left, series: [{id: 200 - firewallevents.count,
-            name: '200', axisId: cloudflare_logs.count}, {id: 301 - firewallevents.count,
-            name: '301', axisId: cloudflare_logs.count}, {id: 302 - firewallevents.count,
-            name: '302', axisId: cloudflare_logs.count}, {id: 304 - firewallevents.count,
-            name: '304', axisId: cloudflare_logs.count}, {id: 403 - firewallevents.count,
-            name: '403', axisId: cloudflare_logs.count}, {id: 404 - firewallevents.count,
-            name: '404', axisId: cloudflare_logs.count}, {id: 499 - firewallevents.count,
-            name: '499', axisId: cloudflare_logs.count}, {id: 520 - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: 200 - httpevents.count,
+            name: '200', axisId: cloudflare_logs.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: cloudflare_logs.count}, {id: 302 - httpevents.count,
+            name: '302', axisId: cloudflare_logs.count}, {id: 304 - httpevents.count,
+            name: '304', axisId: cloudflare_logs.count}, {id: 403 - httpevents.count,
+            name: '403', axisId: cloudflare_logs.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: cloudflare_logs.count}, {id: 499 - httpevents.count,
+            name: '499', axisId: cloudflare_logs.count}, {id: 520 - httpevents.count,
             name: '520', axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -753,14 +753,14 @@
       520 - cloudflare_logs.count: "#d7f218"
     series_types: {}
     hidden_series: []
-    y_axes: [{label: '', orientation: left, series: [{id: 200 - firewallevents.count,
-            name: '200', axisId: cloudflare_logs.count}, {id: 301 - firewallevents.count,
-            name: '301', axisId: cloudflare_logs.count}, {id: 302 - firewallevents.count,
-            name: '302', axisId: cloudflare_logs.count}, {id: 304 - firewallevents.count,
-            name: '304', axisId: cloudflare_logs.count}, {id: 403 - firewallevents.count,
-            name: '403', axisId: cloudflare_logs.count}, {id: 404 - firewallevents.count,
-            name: '404', axisId: cloudflare_logs.count}, {id: 499 - firewallevents.count,
-            name: '499', axisId: cloudflare_logs.count}, {id: 520 - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: 200 - httpevents.count,
+            name: '200', axisId: cloudflare_logs.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: cloudflare_logs.count}, {id: 302 - httpevents.count,
+            name: '302', axisId: cloudflare_logs.count}, {id: 304 - httpevents.count,
+            name: '304', axisId: cloudflare_logs.count}, {id: 403 - httpevents.count,
+            name: '403', axisId: cloudflare_logs.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: cloudflare_logs.count}, {id: 499 - httpevents.count,
+            name: '499', axisId: cloudflare_logs.count}, {id: 520 - httpevents.count,
             name: '520', axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -840,14 +840,14 @@
       520 - cloudflare_logs.count: "#d7f218"
     series_types: {}
     hidden_series: []
-    y_axes: [{label: '', orientation: left, series: [{id: 200 - firewallevents.count,
-            name: '200', axisId: cloudflare_logs.count}, {id: 301 - firewallevents.count,
-            name: '301', axisId: cloudflare_logs.count}, {id: 302 - firewallevents.count,
-            name: '302', axisId: cloudflare_logs.count}, {id: 304 - firewallevents.count,
-            name: '304', axisId: cloudflare_logs.count}, {id: 403 - firewallevents.count,
-            name: '403', axisId: cloudflare_logs.count}, {id: 404 - firewallevents.count,
-            name: '404', axisId: cloudflare_logs.count}, {id: 499 - firewallevents.count,
-            name: '499', axisId: cloudflare_logs.count}, {id: 520 - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: 200 - httpevents.count,
+            name: '200', axisId: cloudflare_logs.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: cloudflare_logs.count}, {id: 302 - httpevents.count,
+            name: '302', axisId: cloudflare_logs.count}, {id: 304 - httpevents.count,
+            name: '304', axisId: cloudflare_logs.count}, {id: 403 - httpevents.count,
+            name: '403', axisId: cloudflare_logs.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: cloudflare_logs.count}, {id: 499 - httpevents.count,
+            name: '499', axisId: cloudflare_logs.count}, {id: 520 - httpevents.count,
             name: '520', axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -926,14 +926,14 @@
       520 - cloudflare_logs.count: "#d7f218"
     series_types: {}
     hidden_series: []
-    y_axes: [{label: '', orientation: left, series: [{id: 200 - firewallevents.count,
-            name: '200', axisId: cloudflare_logs.count}, {id: 301 - firewallevents.count,
-            name: '301', axisId: cloudflare_logs.count}, {id: 302 - firewallevents.count,
-            name: '302', axisId: cloudflare_logs.count}, {id: 304 - firewallevents.count,
-            name: '304', axisId: cloudflare_logs.count}, {id: 403 - firewallevents.count,
-            name: '403', axisId: cloudflare_logs.count}, {id: 404 - firewallevents.count,
-            name: '404', axisId: cloudflare_logs.count}, {id: 499 - firewallevents.count,
-            name: '499', axisId: cloudflare_logs.count}, {id: 520 - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: 200 - httpevents.count,
+            name: '200', axisId: cloudflare_logs.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: cloudflare_logs.count}, {id: 302 - httpevents.count,
+            name: '302', axisId: cloudflare_logs.count}, {id: 304 - httpevents.count,
+            name: '304', axisId: cloudflare_logs.count}, {id: 403 - httpevents.count,
+            name: '403', axisId: cloudflare_logs.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: cloudflare_logs.count}, {id: 499 - httpevents.count,
+            name: '499', axisId: cloudflare_logs.count}, {id: 520 - httpevents.count,
             name: '520', axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -1012,14 +1012,14 @@
       520 - cloudflare_logs.count: "#d7f218"
     series_types: {}
     hidden_series: []
-    y_axes: [{label: '', orientation: left, series: [{id: 200 - firewallevents.count,
-            name: '200', axisId: cloudflare_logs.count}, {id: 301 - firewallevents.count,
-            name: '301', axisId: cloudflare_logs.count}, {id: 302 - firewallevents.count,
-            name: '302', axisId: cloudflare_logs.count}, {id: 304 - firewallevents.count,
-            name: '304', axisId: cloudflare_logs.count}, {id: 403 - firewallevents.count,
-            name: '403', axisId: cloudflare_logs.count}, {id: 404 - firewallevents.count,
-            name: '404', axisId: cloudflare_logs.count}, {id: 499 - firewallevents.count,
-            name: '499', axisId: cloudflare_logs.count}, {id: 520 - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: 200 - httpevents.count,
+            name: '200', axisId: cloudflare_logs.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: cloudflare_logs.count}, {id: 302 - httpevents.count,
+            name: '302', axisId: cloudflare_logs.count}, {id: 304 - httpevents.count,
+            name: '304', axisId: cloudflare_logs.count}, {id: 403 - httpevents.count,
+            name: '403', axisId: cloudflare_logs.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: cloudflare_logs.count}, {id: 499 - httpevents.count,
+            name: '499', axisId: cloudflare_logs.count}, {id: 520 - httpevents.count,
             name: '520', axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -1180,14 +1180,14 @@
     series_types: {}
     limit_displayed_rows: false
     hidden_series: []
-    y_axes: [{label: '', orientation: left, series: [{id: 200 - firewallevents.count,
-            name: '200', axisId: cloudflare_logs.count}, {id: 301 - firewallevents.count,
-            name: '301', axisId: cloudflare_logs.count}, {id: 302 - firewallevents.count,
-            name: '302', axisId: cloudflare_logs.count}, {id: 304 - firewallevents.count,
-            name: '304', axisId: cloudflare_logs.count}, {id: 403 - firewallevents.count,
-            name: '403', axisId: cloudflare_logs.count}, {id: 404 - firewallevents.count,
-            name: '404', axisId: cloudflare_logs.count}, {id: 499 - firewallevents.count,
-            name: '499', axisId: cloudflare_logs.count}, {id: 520 - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: 200 - httpevents.count,
+            name: '200', axisId: cloudflare_logs.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: cloudflare_logs.count}, {id: 302 - httpevents.count,
+            name: '302', axisId: cloudflare_logs.count}, {id: 304 - httpevents.count,
+            name: '304', axisId: cloudflare_logs.count}, {id: 403 - httpevents.count,
+            name: '403', axisId: cloudflare_logs.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: cloudflare_logs.count}, {id: 499 - httpevents.count,
+            name: '499', axisId: cloudflare_logs.count}, {id: 520 - httpevents.count,
             name: '520', axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true

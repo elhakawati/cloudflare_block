@@ -1,5 +1,5 @@
 view: cloudflare_logs {
-  sql_table_name: cloudflarelogs.firewallevents ;;
+  sql_table_name: cloudflarelogs.httpevents ;;
 
 
   dimension: is_threat {

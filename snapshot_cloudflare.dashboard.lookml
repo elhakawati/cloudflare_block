@@ -149,8 +149,8 @@
     point_style: none
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: '', orientation: left, series: [{id: desktop - firewallevents.count,
-            name: desktop, axisId: cloudflare_logs.count}, {id: mobile - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: desktop - httpevents.count,
+            name: desktop, axisId: cloudflare_logs.count}, {id: mobile - httpevents.count,
             name: mobile, axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -210,8 +210,8 @@
     point_style: none
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: '', orientation: left, series: [{id: desktop - firewallevents.count,
-            name: desktop, axisId: cloudflare_logs.count}, {id: mobile - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: desktop - httpevents.count,
+            name: desktop, axisId: cloudflare_logs.count}, {id: mobile - httpevents.count,
             name: mobile, axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -271,8 +271,8 @@
     point_style: none
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: '', orientation: left, series: [{id: desktop - firewallevents.count,
-            name: desktop, axisId: cloudflare_logs.count}, {id: mobile - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: desktop - httpevents.count,
+            name: desktop, axisId: cloudflare_logs.count}, {id: mobile - httpevents.count,
             name: mobile, axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -649,9 +649,9 @@
     show_view_names: false
     point_style: none
     series_colors:
-      200 - firewallevents.count: "#26802a"
-      403 - firewallevents.count: "#992e68"
-      404 - firewallevents.count: "#a936b3"
+      200 - httpevents.count: "#26802a"
+      403 - httpevents.count: "#992e68"
+      404 - httpevents.count: "#a936b3"
     series_types: {}
     limit_displayed_rows: false
     hidden_series: []
@@ -715,9 +715,9 @@
     show_view_names: false
     point_style: none
     series_colors:
-      200 - firewallevents.count: "#26802a"
-      403 - firewallevents.count: "#992e68"
-      404 - firewallevents.count: "#a936b3"
+      200 - httpevents.count: "#26802a"
+      403 - httpevents.count: "#992e68"
+      404 - httpevents.count: "#a936b3"
     series_types: {}
     limit_displayed_rows: false
     hidden_series: []

@@ -132,9 +132,9 @@
     show_view_names: false
     point_style: none
     series_colors:
-      200 - firewallevents.count: "#26802a"
-      403 - firewallevents.count: "#992e68"
-      404 - firewallevents.count: "#a936b3"
+      200 - httpevents.count: "#26802a"
+      403 - httpevents.count: "#992e68"
+      404 - httpevents.count: "#a936b3"
     series_types: {}
     limit_displayed_rows: false
     hidden_series: []
@@ -198,9 +198,9 @@
     show_view_names: false
     point_style: none
     series_colors:
-      200 - firewallevents.count: "#26802a"
-      403 - firewallevents.count: "#992e68"
-      404 - firewallevents.count: "#a936b3"
+      200 - httpevents.count: "#26802a"
+      403 - httpevents.count: "#992e68"
+      404 - httpevents.count: "#a936b3"
     series_types: {}
     limit_displayed_rows: false
     hidden_series: []
@@ -264,9 +264,9 @@
     show_view_names: false
     point_style: none
     series_colors:
-      200 - firewallevents.count: "#26802a"
-      403 - firewallevents.count: "#992e68"
-      404 - firewallevents.count: "#a936b3"
+      200 - httpevents.count: "#26802a"
+      403 - httpevents.count: "#992e68"
+      404 - httpevents.count: "#a936b3"
     series_types: {}
     limit_displayed_rows: false
     hidden_series: []
@@ -368,8 +368,8 @@
     point_style: none
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: '', orientation: left, series: [{id: desktop - firewallevents.count,
-            name: desktop, axisId: cloudflare_logs.count}, {id: mobile - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: desktop - httpevents.count,
+            name: desktop, axisId: cloudflare_logs.count}, {id: mobile - httpevents.count,
             name: mobile, axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -431,8 +431,8 @@
     point_style: none
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: '', orientation: left, series: [{id: desktop - firewallevents.count,
-            name: desktop, axisId: cloudflare_logs.count}, {id: mobile - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: desktop - httpevents.count,
+            name: desktop, axisId: cloudflare_logs.count}, {id: mobile - httpevents.count,
             name: mobile, axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -494,8 +494,8 @@
     point_style: none
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: '', orientation: left, series: [{id: desktop - firewallevents.count,
-            name: desktop, axisId: cloudflare_logs.count}, {id: mobile - firewallevents.count,
+    y_axes: [{label: '', orientation: left, series: [{id: desktop - httpevents.count,
+            name: desktop, axisId: cloudflare_logs.count}, {id: mobile - httpevents.count,
             name: mobile, axisId: cloudflare_logs.count}], showLabels: false, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -557,21 +557,21 @@
     series_colors: {}
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: Ops, orientation: left, series: [{id: 0 - firewallevents.count,
-            name: '0', axisId: firewallevents.count}, {id: 200 - firewallevents.count,
-            name: '200', axisId: firewallevents.count}, {id: 206 - firewallevents.count,
-            name: '206', axisId: firewallevents.count}, {id: 301 - firewallevents.count,
-            name: '301', axisId: firewallevents.count}, {id: 302 - firewallevents.count,
-            name: '302', axisId: firewallevents.count}, {id: 304 - firewallevents.count,
-            name: '304', axisId: firewallevents.count}, {id: 401 - firewallevents.count,
-            name: '401', axisId: firewallevents.count}, {id: 403 - firewallevents.count,
-            name: '403', axisId: firewallevents.count}, {id: 404 - firewallevents.count,
-            name: '404', axisId: firewallevents.count}, {id: 405 - firewallevents.count,
-            name: '405', axisId: firewallevents.count}, {id: 500 - firewallevents.count,
-            name: '500', axisId: firewallevents.count}, {id: 502 - firewallevents.count,
-            name: '502', axisId: firewallevents.count}, {id: 503 - firewallevents.count,
-            name: '503', axisId: firewallevents.count}, {id: 520 - firewallevents.count,
-            name: '520', axisId: firewallevents.count}], showLabels: true, showValues: true,
+    y_axes: [{label: Ops, orientation: left, series: [{id: 0 - httpevents.count,
+            name: '0', axisId: httpevents.count}, {id: 200 - httpevents.count,
+            name: '200', axisId: httpevents.count}, {id: 206 - httpevents.count,
+            name: '206', axisId: httpevents.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: httpevents.count}, {id: 302 - httpevents.count,
+            name: '302', axisId: httpevents.count}, {id: 304 - httpevents.count,
+            name: '304', axisId: httpevents.count}, {id: 401 - httpevents.count,
+            name: '401', axisId: httpevents.count}, {id: 403 - httpevents.count,
+            name: '403', axisId: httpevents.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: httpevents.count}, {id: 405 - httpevents.count,
+            name: '405', axisId: httpevents.count}, {id: 500 - httpevents.count,
+            name: '500', axisId: httpevents.count}, {id: 502 - httpevents.count,
+            name: '502', axisId: httpevents.count}, {id: 503 - httpevents.count,
+            name: '503', axisId: httpevents.count}, {id: 520 - httpevents.count,
+            name: '520', axisId: httpevents.count}], showLabels: true, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
     show_y_axis_labels: true
@@ -631,9 +631,9 @@
     show_view_names: false
     point_style: none
     series_colors:
-      200 - firewallevents.count: "#26802a"
-      403 - firewallevents.count: "#992e68"
-      404 - firewallevents.count: "#a936b3"
+      200 - httpevents.count: "#26802a"
+      403 - httpevents.count: "#992e68"
+      404 - httpevents.count: "#a936b3"
     series_types: {}
     limit_displayed_rows: false
     hidden_series: []
@@ -703,12 +703,12 @@
     point_style: none
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: Requests, orientation: left, series: [{id: expired - firewallevents.count,
-            name: expired, axisId: cloudflare_logs.count}, {id: hit - firewallevents.count,
-            name: hit, axisId: cloudflare_logs.count}, {id: miss - firewallevents.count,
-            name: miss, axisId: cloudflare_logs.count}, {id: revalidated - firewallevents.count,
-            name: revalidated, axisId: cloudflare_logs.count}, {id: unknown - firewallevents.count,
-            name: unknown, axisId: cloudflare_logs.count}, {id: updating - firewallevents.count,
+    y_axes: [{label: Requests, orientation: left, series: [{id: expired - httpevents.count,
+            name: expired, axisId: cloudflare_logs.count}, {id: hit - httpevents.count,
+            name: hit, axisId: cloudflare_logs.count}, {id: miss - httpevents.count,
+            name: miss, axisId: cloudflare_logs.count}, {id: revalidated - httpevents.count,
+            name: revalidated, axisId: cloudflare_logs.count}, {id: unknown - httpevents.count,
+            name: unknown, axisId: cloudflare_logs.count}, {id: updating - httpevents.count,
             name: updating, axisId: cloudflare_logs.count}], showLabels: true, showValues: true,
         unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
@@ -1034,8 +1034,8 @@
     point_style: none
     series_colors: {}
     series_labels:
-      firewallevents.count_origin_requests: Origin Requests
-      firewallevents.count_edge_requests: Total Requests
+      httpevents.count_origin_requests: Origin Requests
+      httpevents.count_edge_requests: Total Requests
     series_types: {}
     limit_displayed_rows: false
     y_axes: [{label: rps, orientation: left, series: [{id: cloudflare_logs.avg_rps_15m,
@@ -1101,16 +1101,16 @@
     point_style: none
     series_colors: {}
     series_labels:
-      firewallevents.count_origin_requests: Origin Requests
-      firewallevents.count_edge_requests: Edge Requests
-      firewallevents.total_edge_bandwidth: Edge Bandwidth
-      firewallevents.total_origin_bandwidth: Origin Bandwidth
+      httpevents.count_origin_requests: Origin Requests
+      httpevents.count_edge_requests: Edge Requests
+      httpevents.total_edge_bandwidth: Edge Bandwidth
+      httpevents.total_origin_bandwidth: Origin Bandwidth
     series_types: {}
     limit_displayed_rows: false
     hidden_series: []
-    y_axes: [{label: '', orientation: left, series: [{id: firewallevents.total_edge_bandwidth,
-            name: Edge Bandwidth, axisId: firewallevents.total_edge_bandwidth}, {
-            id: firewallevents.total_origin_bandwidth, name: Origin Bandwidth, axisId: firewallevents.total_origin_bandwidth}],
+    y_axes: [{label: '', orientation: left, series: [{id: httpevents.total_edge_bandwidth,
+            name: Edge Bandwidth, axisId: httpevents.total_edge_bandwidth}, {
+            id: httpevents.total_origin_bandwidth, name: Origin Bandwidth, axisId: httpevents.total_origin_bandwidth}],
         showLabels: true, showValues: true, valueFormat: '[>=1099511627776]0.00,,,,"
           Tbps";[>=1073741824]0.00,,," Gbps";[>=1048576]0.00,," Mbps";[>1024]0.00,"
           Kbps"', unpinAxis: false, tickDensity: default, type: linear}]
@@ -1368,19 +1368,19 @@
     series_types: {}
     limit_displayed_rows: false
     y_axes: [{label: Requests, orientation: left, series: [{id: access.camilia.me
-              - firewallevents.count, name: access.camilia.me, axisId: cloudflare_logs.count},
-          {id: admin.camilia.me - firewallevents.count, name: admin.camilia.me, axisId: cloudflare_logs.count},
-          {id: c4ca4238a0b923820dcc509a6f75849b.camilia.me - firewallevents.count,
+              - httpevents.count, name: access.camilia.me, axisId: cloudflare_logs.count},
+          {id: admin.camilia.me - httpevents.count, name: admin.camilia.me, axisId: cloudflare_logs.count},
+          {id: c4ca4238a0b923820dcc509a6f75849b.camilia.me - httpevents.count,
             name: c4ca4238a0b923820dcc509a6f75849b.camilia.me, axisId: cloudflare_logs.count},
-          {id: c513153ecafa067c9247304d538e1e32.camilia.me - firewallevents.count,
+          {id: c513153ecafa067c9247304d538e1e32.camilia.me - httpevents.count,
             name: c513153ecafa067c9247304d538e1e32.camilia.me, axisId: cloudflare_logs.count},
-          {id: camilia.me - firewallevents.count, name: camilia.me, axisId: cloudflare_logs.count},
-          {id: f8522ebf95af9a9cc0b0c2663eebcb20.camilia.me - firewallevents.count,
+          {id: camilia.me - httpevents.count, name: camilia.me, axisId: cloudflare_logs.count},
+          {id: f8522ebf95af9a9cc0b0c2663eebcb20.camilia.me - httpevents.count,
             name: f8522ebf95af9a9cc0b0c2663eebcb20.camilia.me, axisId: cloudflare_logs.count},
-          {id: login.camilia.me - firewallevents.count, name: login.camilia.me, axisId: cloudflare_logs.count},
-          {id: net.camilia.me - firewallevents.count, name: net.camilia.me, axisId: cloudflare_logs.count},
-          {id: stats.camilia.me - firewallevents.count, name: stats.camilia.me, axisId: cloudflare_logs.count},
-          {id: www.camilia.me - firewallevents.count, name: www.camilia.me, axisId: cloudflare_logs.count}],
+          {id: login.camilia.me - httpevents.count, name: login.camilia.me, axisId: cloudflare_logs.count},
+          {id: net.camilia.me - httpevents.count, name: net.camilia.me, axisId: cloudflare_logs.count},
+          {id: stats.camilia.me - httpevents.count, name: stats.camilia.me, axisId: cloudflare_logs.count},
+          {id: www.camilia.me - httpevents.count, name: www.camilia.me, axisId: cloudflare_logs.count}],
         showLabels: true, showValues: true, valueFormat: '', unpinAxis: false, tickDensity: default,
         type: linear}]
     y_axis_combined: true
@@ -1447,12 +1447,12 @@
     series_types: {}
     limit_displayed_rows: false
     y_axes: [{label: Requests, orientation: left, series: [{id: application/javascript
-              - firewallevents.count, name: application/javascript, axisId: cloudflare_logs.count},
-          {id: application/javascript; charset=utf-8 - firewallevents.count, name: application/javascript;
+              - httpevents.count, name: application/javascript, axisId: cloudflare_logs.count},
+          {id: application/javascript; charset=utf-8 - httpevents.count, name: application/javascript;
               charset=utf-8, axisId: cloudflare_logs.count}, {id: text/html; charset=iso-8859-1
-              - firewallevents.count, name: text/html; charset=iso-8859-1, axisId: cloudflare_logs.count},
-          {id: text/html; charset=UTF-8 - firewallevents.count, name: text/html; charset=UTF-8,
-            axisId: cloudflare_logs.count}, {id: text/xml; charset=UTF-8 - firewallevents.count,
+              - httpevents.count, name: text/html; charset=iso-8859-1, axisId: cloudflare_logs.count},
+          {id: text/html; charset=UTF-8 - httpevents.count, name: text/html; charset=UTF-8,
+            axisId: cloudflare_logs.count}, {id: text/xml; charset=UTF-8 - httpevents.count,
             name: text/xml; charset=UTF-8, axisId: cloudflare_logs.count}], showLabels: true,
         showValues: true, unpinAxis: false, tickDensity: default, type: linear}]
     y_axis_combined: true
@@ -1646,9 +1646,9 @@
       404 - cloudflare_logs.count: "#f3280b"
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: Requests, orientation: left, series: [{id: none - firewallevents.count,
-            name: none, axisId: cloudflare_logs.count}, {id: TLSv1 - firewallevents.count,
-            name: TLSv1, axisId: cloudflare_logs.count}, {id: TLSv1.2 - firewallevents.count,
+    y_axes: [{label: Requests, orientation: left, series: [{id: none - httpevents.count,
+            name: none, axisId: cloudflare_logs.count}, {id: TLSv1 - httpevents.count,
+            name: TLSv1, axisId: cloudflare_logs.count}, {id: TLSv1.2 - httpevents.count,
             name: TLSv1.2, axisId: cloudflare_logs.count}], showLabels: true, showValues: true,
         unpinAxis: false, tickDensity: default, type: linear}]
     y_axis_combined: true
@@ -1714,8 +1714,8 @@
       404 - cloudflare_logs.count: "#f3280b"
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: Requests, orientation: left, series: [{id: GET - firewallevents.count,
-            name: GET, axisId: cloudflare_logs.count}, {id: POST - firewallevents.count,
+    y_axes: [{label: Requests, orientation: left, series: [{id: GET - httpevents.count,
+            name: GET, axisId: cloudflare_logs.count}, {id: POST - httpevents.count,
             name: POST, axisId: cloudflare_logs.count}], showLabels: true, showValues: true,
         unpinAxis: false, tickDensity: default, type: linear}]
     y_axis_combined: true

@@ -3,8 +3,8 @@ view: current_second_stats {
     sql: select max(TIMESTAMP_TRUNC(edgestarttimestamp, SECOND)) as current_second,
                 avg(edgeresponsebytes) as current_bps,
                 count(*) as current_ops
-        from firewallevents
-        where TIMESTAMP_TRUNC(edgestarttimestamp, SECOND) = (SELECT max(TIMESTAMP_TRUNC(edgestarttimestamp, SECOND)) from firewallevents)
+        from httpevents
+        where TIMESTAMP_TRUNC(edgestarttimestamp, SECOND) = (SELECT max(TIMESTAMP_TRUNC(edgestarttimestamp, SECOND)) from httpevents)
              ;;
 #     persist_for: "168 hours"
   }

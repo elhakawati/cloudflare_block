@@ -6,9 +6,9 @@ view: events_per_second {
         COUNT(*) AS events_per_second_count
      FROM
 <<<<<<< HEAD
-        cloudflarelogs.firewallevents
+        cloudflarelogs.httpevents
 =======
-        cloudflarelogs.firewallevents
+        cloudflarelogs.httpevents
 >>>>>>> ea7676dcbcec1f53f89fa8f95475204a8e7ddb66
      GROUP BY 1
      ORDER BY 2 DESC

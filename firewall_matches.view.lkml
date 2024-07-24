@@ -2,9 +2,9 @@ view: firewall_matches {
   derived_table: {
     sql: SELECT RayID, pos1, pos2, pos3, FirewallMatchesActions, FirewallMatchesRuleIDs, FirewallMatchesSources
 <<<<<<< HEAD
-      FROM `cloudflare-se-analytics.cloudflarelogs.firewallevents`,
+      FROM `cloudflare-se-analytics.cloudflarelogs.httpevents`,
 =======
-      FROM `cloudflare-se-analytics.cloudflarelogs.firewallevents`,
+      FROM `cloudflare-se-analytics.cloudflarelogs.httpevents`,
 >>>>>>> ea7676dcbcec1f53f89fa8f95475204a8e7ddb66
       UNNEST(FirewallMatchesActions) FirewallMatchesActions WITH OFFSET pos1,
       UNNEST(FirewallMatchesRuleIDs) FirewallMatchesRuleIDs WITH OFFSET pos2,
