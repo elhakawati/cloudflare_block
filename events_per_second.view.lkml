@@ -5,7 +5,11 @@ view: events_per_second {
         TIMESTAMP_TRUNC(EdgeStartTimestamp, SECOND) AS time_seconds,
         COUNT(*) AS events_per_second_count
      FROM
+<<<<<<< HEAD
         cloudflarelogs.firewallevents
+=======
+        cloudflarelogs.firewallevents
+>>>>>>> ea7676dcbcec1f53f89fa8f95475204a8e7ddb66
      GROUP BY 1
      ORDER BY 2 DESC
        ;;
