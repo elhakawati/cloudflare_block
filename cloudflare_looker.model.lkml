@@ -4,7 +4,7 @@ connection: "cloudflare-logs"
 include: "*.view"
 
 # include all the dashboards
-# include: "*.dashboard.lookml"
+include: "*.dashboard.lookml"
 
 datagroup: cloudflare_looker_default_datagroup {
 #   sql_trigger: SELECT MAX(id) FROM etl_log;;

@@ -1010,7 +1010,7 @@
     width: 22
     height: 6
   - title: Total Requests vs. Origin Requests in rps last 24 hours
-    name: Total Requests vs. Origin Requests in rps last 24 hours
+    name: "Total_vs_Origin_Requests_RPS_Last_24Hrs"
     model: cloudflare_looker
     explore: cloudflare_logs
     type: looker_line
@@ -1752,11 +1752,9 @@
     col: 1
     width: 11
     height: 5
-  - name: '<img style="display: block;" class="top-nav__logo top-nav__logo--dark top-nav__logo--transparent"
-      src="https://www.cloudflare.com/img/logo-cloudflare-dark.svg">'
+  - name: "Cloudflare_Logo"  # Changed to a simple identifier without HTML tags
     type: text
-    title_text: '<img style="display: block;" class="top-nav__logo top-nav__logo--dark
-      top-nav__logo--transparent" src="https://www.cloudflare.com/img/logo-cloudflare-dark.svg">'
+    title_text: '<img style="display: block;" class="top-nav__logo top-nav__logo--dark top-nav__logo--transparent" src="https://www.cloudflare.com/img/logo-cloudflare-dark.svg">'
     row: 0
     col: 1
     width: 4

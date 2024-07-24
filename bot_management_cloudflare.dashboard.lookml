@@ -9,13 +9,14 @@
     col: 16
     width: 7
     height: 2
-  - name: <img src="https://www.cloudflare.com/img/logo-cloudflare-dark.svg">
+  - name: "Cloudflare_Logo"  # Simple and valid identifier
     type: text
-    title_text: <img src="https://www.cloudflare.com/img/logo-cloudflare-dark.svg">
+    title_text: '<img style="display: block;" class="top-nav__logo top-nav__logo--dark top-nav__logo--transparent" src="https://www.cloudflare.com/img/logo-cloudflare-dark.svg">'  # HTML is appropriate here
     row: 0
     col: 1
     width: 4
     height: 2
+
   - title: Bad Bots - Top IPs - AS Number - Country
     name: Bad Bots - Top IPs - AS Number - Country
     model: cloudflare_looker
@@ -346,7 +347,7 @@
     width: 4
     height: 2
   - title: Bad Bots
-    name: Bad Bots
+    name: "Bad Bots Count"
     model: cloudflare_looker
     explore: cloudflare_logs
     type: single_value
@@ -400,7 +401,7 @@
     width: 7
     height: 2
   - title: CAPTCHAs Solved
-    name: CAPTCHAs Solved
+    name: "CAPTCHAs Solved Count"
     model: cloudflare_looker
     explore: cloudflare_logs
     type: single_value
@@ -583,7 +584,7 @@
     width: 7
     height: 4
   - title: Bad Bots -. Top Referer
-    name: Bad Bots -. Top Referer
+    name: "Bad_Bots_Top_Referer"
     model: cloudflare_looker
     explore: cloudflare_logs
     type: table

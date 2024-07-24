@@ -52,7 +52,7 @@
     width: 7
     height: 5
   - title: Edge Response Status in rps
-    name: Edge Response Status in rps
+    name: "Edge_Response_Status_RPS_Updated"
     model: cloudflare_looker
     explore: cloudflare_logs
     type: looker_line
@@ -1068,11 +1068,9 @@
     col: 1
     width: 22
     height: 2
-  - name: '<img style="display: block;" class="top-nav__logo top-nav__logo--dark top-nav__logo--transparent"
-      src="https://www.cloudflare.com/img/logo-cloudflare-dark.svg">'
+  - name: "Cloudflare_Logo_Display"
     type: text
-    title_text: '<img style="display: block;" class="top-nav__logo top-nav__logo--dark
-      top-nav__logo--transparent" src="https://www.cloudflare.com/img/logo-cloudflare-dark.svg">'
+    title_text: '<img style="display: block;" class="top-nav__logo top-nav__logo--dark top-nav__logo--transparent" src="https://www.cloudflare.com/img/logo-cloudflare-dark.svg">'
     row: 0
     col: 1
     width: 4
