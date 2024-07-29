@@ -79,9 +79,14 @@
     type: single_value
     fields: [cloudflare_logs.count]
     limit: 500
-    dynamic_fields: [{table_calculation: calculation_1, label: Calculation 1, expression: "${cloudflare_logs.count}\
-          \ - offset(${cloudflare_logs.count}, -1) ", value_format: null '', value_format_name: null '',
-        _kind_hint: measure, _type_hint: number}]
+    dynamic_fields:
+      - table_calculation: calculation_1
+        label: Calculation 1
+        expression: "${cloudflare_logs.count} - offset(${cloudflare_logs.count}, -1)"
+        value_format: null
+        value_format_name: null
+        _kind_hint: measure
+        _type_hint: number
     query_timezone: America/Los_Angeles
     custom_color_enabled: false
     custom_color: forestgreen
@@ -111,6 +116,7 @@
     col: 1
     width: 5
     height: 2
+
   - title: Cached Bandwidth
     name: Cached Bandwidth
     model: cloudflare_looker
