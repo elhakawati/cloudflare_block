@@ -540,8 +540,8 @@
     col: 18
     width: 5
     height: 2
-  - title: Average rps
-    name: Average rps
+  - title: Average RPS
+    name: Average RPS
     model: cloudflare_looker
     explore: cloudflare_logs
     type: single_value
@@ -551,8 +551,19 @@
     column_limit: 50
     query_timezone: America/Los_Angeles
     stacking: ''
-    colors: ["#5245ed", "#ed6168", "#1ea8df", "#353b49", "#49cec1", "#b3a0dd", "#db7f2a",
-      "#706080", "#a2dcf3", "#776fdf", "#e9b404", "#635189"]
+    colors:
+      - "#5245ed"
+      - "#ed6168"
+      - "#1ea8df"
+      - "#353b49"
+      - "#49cec1"
+      - "#b3a0dd"
+      - "#db7f2a"
+      - "#706080"
+      - "#a2dcf3"
+      - "#776fdf"
+      - "#e9b404"
+      - "#635189"
     show_value_labels: false
     label_density: 25
     legend_position: right
@@ -563,22 +574,58 @@
     series_colors: {}
     series_types: {}
     limit_displayed_rows: false
-    y_axes: [{label: Ops, orientation: left, series: [{id: 0 - httpevents.count,
-            name: '0', axisId: httpevents.count}, {id: 200 - httpevents.count,
-            name: '200', axisId: httpevents.count}, {id: 206 - httpevents.count,
-            name: '206', axisId: httpevents.count}, {id: 301 - httpevents.count,
-            name: '301', axisId: httpevents.count}, {id: 302 - httpevents.count,
-            name: '302', axisId: httpevents.count}, {id: 304 - httpevents.count,
-            name: '304', axisId: httpevents.count}, {id: 401 - httpevents.count,
-            name: '401', axisId: httpevents.count}, {id: 403 - httpevents.count,
-            name: '403', axisId: httpevents.count}, {id: 404 - httpevents.count,
-            name: '404', axisId: httpevents.count}, {id: 405 - httpevents.count,
-            name: '405', axisId: httpevents.count}, {id: 500 - httpevents.count,
-            name: '500', axisId: httpevents.count}, {id: 502 - httpevents.count,
-            name: '502', axisId: httpevents.count}, {id: 503 - httpevents.count,
-            name: '503', axisId: httpevents.count}, {id: 520 - httpevents.count,
-            name: '520', axisId: httpevents.count}], showLabels: true, showValues: true,
-        unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
+    y_axes:
+      - label: Ops
+        orientation: left
+        series:
+          - id: 0 - httpevents.count
+            name: '0'
+            axisId: httpevents.count
+          - id: 200 - httpevents.count
+            name: '200'
+            axisId: httpevents.count
+          - id: 206 - httpevents.count
+            name: '206'
+            axisId: httpevents.count
+          - id: 301 - httpevents.count
+            name: '301'
+            axisId: httpevents.count
+          - id: 302 - httpevents.count
+            name: '302'
+            axisId: httpevents.count
+          - id: 304 - httpevents.count
+            name: '304'
+            axisId: httpevents.count
+          - id: 401 - httpevents.count
+            name: '401'
+            axisId: httpevents.count
+          - id: 403 - httpevents.count
+            name: '403'
+            axisId: httpevents.count
+          - id: 404 - httpevents.count
+            name: '404'
+            axisId: httpevents.count
+          - id: 405 - httpevents.count
+            name: '405'
+            axisId: httpevents.count
+          - id: 500 - httpevents.count
+            name: '500'
+            axisId: httpevents.count
+          - id: 502 - httpevents.count
+            name: '502'
+            axisId: httpevents.count
+          - id: 503 - httpevents.count
+            name: '503'
+            axisId: httpevents.count
+          - id: 520 - httpevents.count
+            name: '520'
+            axisId: httpevents.count
+        showLabels: true
+        showValues: true
+        unpinAxis: false
+        tickDensity: default
+        tickDensityCustom: 5
+        type: linear
     y_axis_combined: true
     show_y_axis_labels: true
     show_y_axis_ticks: true
@@ -613,6 +660,7 @@
     col: 6
     width: 4
     height: 2
+
   - title: Cached vs Uncached Bandwidth Over Time
     name: Cached vs Uncached Bandwidth Over Time
     model: cloudflare_looker
