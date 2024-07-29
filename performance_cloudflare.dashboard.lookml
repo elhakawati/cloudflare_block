@@ -547,7 +547,22 @@
     explore: cloudflare_logs
     type: single_value
     fields: [events_per_second.avg_events_per_second]
-    filters: {}
+    filters:
+      # Remove filters with unknown fields
+      # Uncomment and adjust these filters based on valid dimensions in your model
+      # client_request_method:
+      #   field: cloudflare_logs.client_request_method
+      #   operator: "is not"
+      #   value: "PURGE"
+
+      # edge_start_timestamp:
+      #   field: cloudflare_logs.edge_start_timestamp
+      #   operator: "in the past 24 hours"  # Adjust as needed
+
+      # worker_subrequest:
+      #   field: cloudflare_logs.worker_subrequest
+      #   operator: "is null"
+
     limit: 500
     column_limit: 50
     query_timezone: America/Los_Angeles
@@ -597,6 +612,8 @@
     interpolation: linear
     hidden_fields: []
     listen:
+      # Remove or update listen fields based on valid dimensions
+      # Example:
       Date: cloudflare_logs.edge_start_timestamp_hour
       Device Type: cloudflare_logs.client_device_type
       Country: countries.country_name
@@ -614,6 +631,7 @@
     col: 6
     width: 4
     height: 2
+
 
 
   - title: Cached vs Uncached Bandwidth Over Time
