@@ -540,6 +540,7 @@
     col: 18
     width: 5
     height: 2
+
   - title: Average rps
     name: Average rps
     model: cloudflare_looker
@@ -548,21 +549,53 @@
     fields: [events_per_second.avg_events_per_second]
     filters: {}
     limit: 500
+    column_limit: 50
     query_timezone: America/Los_Angeles
-    colors: ["#5245ed", "#ed6168", "#1ea8df", "#353b49", "#49cec1", "#b3a0dd", "#db7f2a"]
+    stacking: ''
+    colors: ["#5245ed", "#ed6168", "#1ea8df", "#353b49", "#49cec1", "#b3a0dd", "#db7f2a",
+      "#706080", "#a2dcf3", "#776fdf", "#e9b404", "#635189"]
     show_value_labels: false
+    label_density: 25
+    legend_position: right
     x_axis_gridlines: false
     y_axis_gridlines: true
+    show_view_names: true
     point_style: none
-    y_axes: [{label: Ops, orientation: left, series: [{id: 0 - httpevents.count, name: '0'}], type: linear}]
+    series_colors: {}
+    series_types: {}
+    limit_displayed_rows: false
+    y_axes: [{label: Ops, orientation: left, series: [{id: 0 - httpevents.count,
+            name: '0', axisId: httpevents.count}, {id: 200 - httpevents.count,
+            name: '200', axisId: httpevents.count}, {id: 206 - httpevents.count,
+            name: '206', axisId: httpevents.count}, {id: 301 - httpevents.count,
+            name: '301', axisId: httpevents.count}, {id: 302 - httpevents.count,
+            name: '302', axisId: httpevents.count}, {id: 304 - httpevents.count,
+            name: '304', axisId: httpevents.count}, {id: 401 - httpevents.count,
+            name: '401', axisId: httpevents.count}, {id: 403 - httpevents.count,
+            name: '403', axisId: httpevents.count}, {id: 404 - httpevents.count,
+            name: '404', axisId: httpevents.count}, {id: 405 - httpevents.count,
+            name: '405', axisId: httpevents.count}, {id: 500 - httpevents.count,
+            name: '500', axisId: httpevents.count}, {id: 502 - httpevents.count,
+            name: '502', axisId: httpevents.count}, {id: 503 - httpevents.count,
+            name: '503', axisId: httpevents.count}, {id: 520 - httpevents.count,
+            name: '520', axisId: httpevents.count}], showLabels: true, showValues: true,
+        unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear}]
     y_axis_combined: true
     show_y_axis_labels: true
     show_y_axis_ticks: true
-    x_axis_label: Edge Start Time (15s)
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
     show_x_axis_label: true
+    x_axis_label: Edge Start Time (15s)
+    show_x_axis_ticks: true
     x_axis_scale: auto
     y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    show_null_points: true
     interpolation: linear
+    hidden_fields: []
     listen:
       Date: cloudflare_logs.edge_start_timestamp_hour
       Device Type: cloudflare_logs.client_device_type
