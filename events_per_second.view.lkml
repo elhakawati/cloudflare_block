@@ -1,20 +1,20 @@
-view: events_per_second {
-  derived_table: {
-    sql:
-    SELECT
-        TIMESTAMP_TRUNC(EdgeStartTimestamp, SECOND) AS time_seconds,
-        COUNT(*) AS events_per_second_count
-     FROM
-<<<<<<< HEAD
-        cloudflarelogs.httpevents
-=======
-        cloudflarelogs.httpevents
->>>>>>> ea7676dcbcec1f53f89fa8f95475204a8e7ddb66
-     GROUP BY 1
-     ORDER BY 2 DESC
-       ;;
-#       persist_for: "168 hours"
-  }
+  view: events_per_second {
+    derived_table: {
+      sql:
+          SELECT
+              TIMESTAMP_TRUNC(EdgeStartTimestamp, SECOND) AS time_seconds,
+              COUNT(*) AS events_per_second_count
+           FROM
+      <<<<<<< HEAD
+              cloudflarelogs.httpevents
+      =======
+              cloudflarelogs.httpevents
+      >>>>>>> ea7676dcbcec1f53f89fa8f95475204a8e7ddb66
+           GROUP BY 1
+           ORDER BY 2 DESC
+             ;;
+      #       persist_for: "168 hours"
+      }
 
   measure: avg_events_per_second {
     type: average
