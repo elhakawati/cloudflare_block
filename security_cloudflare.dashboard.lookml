@@ -601,7 +601,7 @@
     model: cloudflare_looker
     explore: cloudflare_logs
     type: table
-    fields: [cloudflare_logs.wafrule_id, cloudflare_logs.wafrule_message, cloudflare_logs.count]
+    fields: [cloudflare_logs.wafrule_id, cloudflare_logs.count]
     filters:
       cloudflare_logs.wafrule_id: "-EMPTY"
     sorts: [cloudflare_logs.count desc]
