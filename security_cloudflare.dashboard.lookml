@@ -68,7 +68,7 @@
     name: 'WAF: Top Countries'
     model: cloudflare_looker
     explore: cloudflare_logs
-    type: looker_pie
+    type: table
     fields: [cloudflare_logs.count, countries.country_name]
     filters:
       cloudflare_logs.wafrule_id: "-EMPTY"
