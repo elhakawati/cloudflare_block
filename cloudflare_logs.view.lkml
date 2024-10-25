@@ -4,7 +4,7 @@ view: cloudflare_logs {
   dimension: is_threat {
     type: yesno
     sql: (
-      (security_action IN ('block', 'managedChallengeFailed')) OR
+      (SecurityAction IN ('block', 'managedChallengeFailed')) OR
       (edgePathingSrc = 'bic' AND edgePathingOp = 'ban' AND edgePathingStatus = 'unknown') OR
       (edgePathingSrc = 'hot' AND edgePathingOp = 'ban' AND edgePathingStatus IN ('unknown', 'ip')) OR
       (edgePathingSrc = 'macro' AND edgePathingOp = 'ban' AND edgePathingStatus = 'unknown') OR
