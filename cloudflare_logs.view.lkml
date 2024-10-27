@@ -3,7 +3,9 @@ view: cloudflare_logs {
 
   dimension: is_threat {
     type: yesno
-    sql: (edgePathingSrc = 'bic' AND edgePathingOp = 'ban' AND edgePathingStatus = 'unknown') OR
+    sql:
+      (
+          (edgePathingSrc = 'bic' AND edgePathingOp = 'ban' AND edgePathingStatus = 'unknown') OR
           (edgePathingSrc = 'hot' AND edgePathingOp = 'ban' AND edgePathingStatus IN ('unknown', 'ip')) OR
           (edgePathingSrc = 'macro' AND edgePathingOp = 'ban' AND edgePathingStatus = 'unknown') OR
           (edgePathingSrc = 'macro' AND edgePathingOp = 'chl' AND edgePathingStatus IN ('captchaFail', 'captchaErr', 'captchaNew')) OR
@@ -16,9 +18,10 @@ view: cloudflare_logs {
           (edgePathingSrc = 'protect' AND edgePathingOp = 'ban' AND edgePathingStatus = 'l7ddos') OR
           (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus = 'ctry') OR
           (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus = 'ip') OR
-          (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus IN ('ipr16', 'ipr24', 'ip6', 'ip6r64', 'ip6r48', 'ip6r32'));;
+          (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus IN ('ipr16', 'ipr24', 'ip6', 'ip6r64', 'ip6r48', 'ip6r32')) OR
+          (SecurityAction IN ('block', 'managedChallengeFailed', 'managedChallenge'))
+      ) ;;
   }
-
 
 
   dimension: is_bot {
