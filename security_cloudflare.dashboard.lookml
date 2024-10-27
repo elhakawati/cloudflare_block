@@ -69,7 +69,9 @@
     model: cloudflare_looker
     explore: cloudflare_logs
     type: table
-    fields: [cloudflare_logs.count, countries.country_name,cloudflare_logs.wafrule_id]
+    fields: [cloudflare_logs.count, countries.country_name]
+    filters:
+      cloudflare_logs.wafrule_id: "-EMPTY"
     sorts: [cloudflare_logs.count desc]
     limit: 500
     query_timezone: America/Los_Angeles
