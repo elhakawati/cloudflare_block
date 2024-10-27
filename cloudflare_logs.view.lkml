@@ -605,7 +605,7 @@ view: cloudflare_logs {
 
   dimension: has_wafrule_id {
     type: yesno
-    sql: IFNULL(${TABLE}.wafrule_id, '') != '' ;;
+    sql: IFNULL(${TABLE}.WAFRuleID, '') != '' ;;
     description: "Flags rows where wafrule_id is not null."
   }
 
