@@ -457,7 +457,7 @@
     fields: [cloudflare_logs.count, cloudflare_logs.edge_start_timestamp_date]
     fill_fields: [cloudflare_logs.edge_start_timestamp_date]
     filters:
-      cloudflare_logs.wafrule_id: "-EMPTY"
+      cloudflare_logs.is_waf_rule_id_present: "yes"
     sorts: [cloudflare_logs.count desc]
     limit: 500
     query_timezone: America/Los_Angeles

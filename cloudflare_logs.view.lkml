@@ -599,8 +599,14 @@ view: cloudflare_logs {
 
   dimension: wafrule_id {
     type: string
-    sql: COALESCE(${TABLE}.WAFRuleID, '-EMPTY') ;;
-    description: "WAF rule identifier; defaults to -EMPTY if none exists."
+    sql: ${TABLE}.WAFRuleID ;;
+    group_label: "WAF"
+  }
+
+  dimension: is_waf_rule_id_present {
+    type: yesno
+    sql: ${TABLE}.WAFRuleID IS NOT NULL ;;
+    description: "Indicates if WAFRuleID is not null."
   }
 
   dimension: wafrule_message {
