@@ -599,7 +599,7 @@ view: cloudflare_logs {
 
   dimension: wafrule_id {
     type: string
-    sql: COALESCE(${TABLE}.wafrule_id, '-EMPTY') ;;
+    sql: COALESCE(${TABLE}.WAFRuleID, '-EMPTY') ;;
     description: "WAF rule identifier; defaults to -EMPTY if none exists."
   }
 
