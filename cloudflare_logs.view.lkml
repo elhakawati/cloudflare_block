@@ -599,8 +599,8 @@ view: cloudflare_logs {
 
   dimension: wafrule_id {
     type: string
-    sql: ${TABLE}.WAFRuleID ;;
-    group_label: "WAF"
+    sql: COALESCE(${TABLE}.wafrule_id, '-EMPTY') ;;
+    description: "WAF rule identifier; defaults to -EMPTY if none exists."
   }
 
   dimension: wafrule_message {
