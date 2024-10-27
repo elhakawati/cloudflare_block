@@ -603,11 +603,11 @@ view: cloudflare_logs {
     group_label: "WAF"
   }
 
-dimension: has_wafrule_id {
-  type: yesno
-  sql: NOT is_null(${TABLE}.WAFRuleID) ;;
-  description: "Flags rows where wafrule_id is not null."
-}
+  dimension: has_wafrule_id {
+    type: yesno
+    sql: IFNULL(${TABLE}.wafrule_id, '') != '' ;;
+    description: "Flags rows where wafrule_id is not null."
+  }
 
   dimension: wafrule_message {
     type: string
