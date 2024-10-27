@@ -30,6 +30,8 @@ view: cloudflare_logs {
     group_label: "Bot"
   }
 
+
+
     dimension: is_captcha_solved {
     type: yesno
     sql: (edgePathingSrc = 'filterBasedFirewall' AND edgePathingStatus = 'captchaSucc');;

@@ -71,7 +71,7 @@
     type: table
     fields: [cloudflare_logs.count, countries.country_name]
     filters:
-      cloudflare_logs.wafrule_id: "-EMPTY"
+    cloudflare_logs.wafrule_id: " -NULL"
     sorts: [cloudflare_logs.count desc]
     limit: 500
     query_timezone: America/Los_Angeles
@@ -103,7 +103,7 @@
     type: single_value
     fields: [cloudflare_logs.count]
     filters:
-      cloudflare_logs.wafrule_id: "-EMPTY"
+    cloudflare_logs.wafrule_id: " -NULL"
     sorts: [cloudflare_logs.count desc]
     limit: 500
     query_timezone: America/Los_Angeles
