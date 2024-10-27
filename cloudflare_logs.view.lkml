@@ -3,23 +3,20 @@ view: cloudflare_logs {
 
   dimension: is_threat {
     type: yesno
-    sql: (
-      (SecurityAction IN ('block', 'managedChallengeFailed')) OR
-      (edgePathingSrc = 'bic' AND edgePathingOp = 'ban' AND edgePathingStatus = 'unknown') OR
-      (edgePathingSrc = 'hot' AND edgePathingOp = 'ban' AND edgePathingStatus IN ('unknown', 'ip')) OR
-      (edgePathingSrc = 'macro' AND edgePathingOp = 'ban' AND edgePathingStatus = 'unknown') OR
-      (edgePathingSrc = 'macro' AND edgePathingOp = 'chl' AND edgePathingStatus IN ('captchaFail', 'captchaErr', 'captchaNew')) OR
-      (edgePathingSrc = 'macro' AND edgePathingOp = 'chl' AND edgePathingStatus IN ('jschlFail', 'jschlErr', 'jschlNew')) OR
-      (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus = 'zl') OR
-      (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus = 'ua') OR
-      (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus = 'rateLimit') OR
-      (edgePathingSrc = 'filterBasedFirewall' AND edgePathingOp = 'ban' AND edgePathingStatus = 'unknown') OR
-      (edgePathingSrc = 'filterBasedFirewall' AND edgePathingOp = 'chl') OR
-      (edgePathingSrc = 'protect' AND edgePathingOp = 'ban' AND edgePathingStatus = 'l7ddos') OR
-      (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus = 'ctry') OR
-      (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus = 'ip') OR
-      (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus IN ('ipr16', 'ipr24', 'ip6', 'ip6r64', 'ip6r48', 'ip6r32'))
-    ) ;;
+    sql: (edgePathingSrc = 'bic' AND edgePathingOp = 'ban' AND edgePathingStatus = 'unknown') OR
+          (edgePathingSrc = 'hot' AND edgePathingOp = 'ban' AND edgePathingStatus IN ('unknown', 'ip')) OR
+          (edgePathingSrc = 'macro' AND edgePathingOp = 'ban' AND edgePathingStatus = 'unknown') OR
+          (edgePathingSrc = 'macro' AND edgePathingOp = 'chl' AND edgePathingStatus IN ('captchaFail', 'captchaErr', 'captchaNew')) OR
+          (edgePathingSrc = 'macro' AND edgePathingOp = 'chl' AND edgePathingStatus IN ('jschlFail', 'jschlErr', 'jschlNew')) OR
+          (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus = 'zl') OR
+          (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus = 'ua') OR
+          (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus = 'rateLimit') OR
+          (edgePathingSrc = 'filterBasedFirewall' AND edgePathingOp = 'ban' AND edgePathingStatus = 'unknown') OR
+          (edgePathingSrc = 'filterBasedFirewall' AND edgePathingOp = 'chl') OR
+          (edgePathingSrc = 'protect' AND edgePathingOp = 'ban' AND edgePathingStatus = 'l7ddos') OR
+          (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus = 'ctry') OR
+          (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus = 'ip') OR
+          (edgePathingSrc = 'user' AND edgePathingOp = 'ban' AND edgePathingStatus IN ('ipr16', 'ipr24', 'ip6', 'ip6r64', 'ip6r48', 'ip6r32'));;
   }
 
 
