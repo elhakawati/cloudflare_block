@@ -24,6 +24,7 @@ view: cloudflare_logs {
   }
 
 
+
   dimension: is_bot {
     type: yesno
     sql: (edgePathingSrc = 'filterBasedFirewall' AND edgePathingStatus = 'captchaNew');;
@@ -608,6 +609,13 @@ view: cloudflare_logs {
     sql: IFNULL(${wafrule_id}, '') != '' ;;
     description: "Flags rows where wafrule_id is not null."
   }
+
+  dimension: is_waf_event {
+    type: string
+    sql: ${TABLE}.SecurityAction ;;
+    group_label: "WAF"
+  }
+
 
   dimension: wafrule_message {
     type: string
