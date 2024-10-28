@@ -601,6 +601,7 @@ view: cloudflare_logs {
   dimension: wafrule_id {
     type: string
     sql: ${TABLE}.SecurityRuleDescription ;;
+    label: "Security_Rule Description"
     group_label: "WAF"
   }
 
