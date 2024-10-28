@@ -750,8 +750,8 @@
       Client Request Method: cloudflare_logs.client_request_method
     row: 2
     col: 18
-    width: 5
-    height: 2
+    width: 8
+    height: 6
   - title: Top Threat Countries Map
     name: Top Threat Countries Map
     model: cloudflare_looker
