@@ -71,7 +71,7 @@
     type: table
     fields: [cloudflare_logs.count, countries.country_name]
     filters:
-      cloudflare_logs.is_waf_event : "-EMPTY"
+      cloudflare_logs.wafrule_id : "-EMPTY"
     sorts: [cloudflare_logs.count desc]
     limit: 500
     query_timezone: America/Los_Angeles
@@ -103,7 +103,7 @@
     type: single_value
     fields: [cloudflare_logs.count]
     filters:
-      cloudflare_logs.has_wafrule_id: "yes"
+      cloudflare_logs.wafrule_id: "-EMPTY"
     sorts: [cloudflare_logs.count desc]
     limit: 500
     query_timezone: America/Los_Angeles
@@ -457,7 +457,7 @@
     fields: [cloudflare_logs.count, cloudflare_logs.edge_start_timestamp_date]
     fill_fields: [cloudflare_logs.edge_start_timestamp_date]
     filters:
-      cloudflare_logs.has_wafrule_id: "yes"
+      cloudflare_logs.wafrule_id: "-EMPTY"
     sorts: [cloudflare_logs.count desc]
     limit: 500
     query_timezone: America/Los_Angeles
